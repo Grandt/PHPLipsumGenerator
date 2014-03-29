@@ -70,7 +70,19 @@ class LipsumGenerator {
 		}
 		return $indent . trim($chapter) . ".$eol";
 	}
-	
+
+	/**
+	 * 
+	 * @param integer $minWordCount Defaults to 200.
+	 * @param integer $maxWordCount Defaults to 2000.
+	 * @param integer $useMultipleParagraphs Generate a text with multiple paragraphs. efaults to TRUE. 
+	 * @param boolean $startWithLorem Will start each chapter with the text "Lorem ipsum dolor sit amet, consectetur adipisicing elit.", the length of which is subtracted from the $minWordCount. Used to help identify the place holder text for what it really is. Defaults to TRUE.
+	 * @return string
+	 */
+	public function generateHTML($minWordCount = 200, $maxWordCount = 2000, $useMultipleParagraphs = TRUE, $startWithLorem = TRUE) {
+		return $this->generate($minWordCount, $maxWordCount, $useMultipleParagraphs, $startWithLorem, "<p>", "</p>\r\n");
+	}
+
 	/**
 	 * Set a new base text to be used for generation. It must be a plain text file, and it'll split it on spaces only.
 	 * 
