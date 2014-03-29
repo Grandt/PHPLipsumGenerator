@@ -32,4 +32,4 @@ To use the class, simply call generate with these parameters, all of which are o
   End of line sequence.
   Default: The Windows new line sequence ("\r\n").
 
-generateHTML is a convenience method, identical to generate, but where $indent="<p>" and $eol="</p>\r\n".
+generateHTML is a convenience method, identical to generate, but where $indent="&lt;p&gt;" and $eol="&lt;/p&gt;\r\n".
