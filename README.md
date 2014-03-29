@@ -3,6 +3,12 @@ PHPLipsumGenerator
 
 Create garbled, non repetitive "chapters" using the standard Lorem Ipsum text as a basis.
 
+
+## License
+LGPL 2.1
+
+### Guide
+
 The intention is to help debug or test text input, by being quickly able to generate vast amounts of non predictable text. 
 
 The user can generate set the source text, if something different than the original Latin Lorem text is not desirable.
@@ -26,3 +32,4 @@ To use the class, simply call generate with these parameters, all of which are o
   End of line sequence.
   Default: The Windows new line sequence ("\r\n").
 
+generateHTML is a convenience method, identical to generate, but where $indent="<p>" and $eol="</p>\r\n".
