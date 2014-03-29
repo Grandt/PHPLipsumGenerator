@@ -6,6 +6,10 @@
 	<body>
 		<h1>Lipsum Generator Test</h1>
 		<?php
+			error_reporting(E_ALL | E_STRICT);
+			ini_set('error_reporting', E_ALL | E_STRICT);
+			ini_set('display_errors', 1);
+
 			require_once './LipsumGenerator.php';
 			$lg = new com\grandt\php\LipsumGenerator();
 		?>
