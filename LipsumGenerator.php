@@ -18,7 +18,7 @@ class LipsumGenerator {
 	private static $lipsum = null;
 	private static $lipsumcount = 0;
 
-	private $lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
+	private $lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ";
 
 	/**
 	 * 
@@ -41,7 +41,7 @@ class LipsumGenerator {
 
 		$chapter = "";
 		if ($startWithLorem === TRUE) {
-			$chapter = $this->lorem . " ";
+			$chapter = $this->lorem;
 		}
 
 		for ($i = 0 ; $i < $tcount ; $i++) {

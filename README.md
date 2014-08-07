@@ -11,7 +11,7 @@ LGPL 2.1
 
 The intention is to help debug or test text input, by being quickly able to generate vast amounts of non predictable text. 
 
-The user can generate set the source text, if something different than the original Latin Lorem text is not desirable.
+The user can set the source text to something different than the original Latin Lorem text, if desired.
 
 To use the class, simply call generate with these parameters, all of which are optional:
 
