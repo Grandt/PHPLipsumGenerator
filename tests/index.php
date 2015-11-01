@@ -6,12 +6,16 @@
 	<body>
 		<h1>Lipsum Generator Test</h1>
 		<?php
-			error_reporting(E_ALL | E_STRICT);
+        use com\grandt\php\LipsumGenerator;
+
+        include 'vendor/autoload.php';
+
+		error_reporting(E_ALL | E_STRICT);
 			ini_set('error_reporting', E_ALL | E_STRICT);
 			ini_set('display_errors', 1);
 
-			require_once './LipsumGenerator.php';
-			$lg = new com\grandt\php\LipsumGenerator();
+
+			$lg = new LipsumGenerator();
 		?>
 		<p><strong>Between 300 and 1000 words:</strong></p>
 		<pre><?= $lg->generate(300, 1000) ?></pre>
